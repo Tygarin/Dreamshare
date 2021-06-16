@@ -345,9 +345,6 @@ footer .container .footer__designed .designed__img {
   .header__auth {
     margin-right: 25px;
   }
-  .container {
-    max-width: 760px;
-  }
   .meet .container .meet__cards {
     display: flex;
     justify-content: center;
@@ -359,6 +356,9 @@ footer .container .footer__designed .designed__img {
   }
 }
 @media (max-width: 600px) {
+  .container {
+    max-width: 760px;
+  }
   .about {
     margin-top: 30px;
   }
