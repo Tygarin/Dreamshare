@@ -172,7 +172,7 @@ header .container .header__content .header__find {
 .meet .container .meet__cards .person-meet .meet__avatar::before {
   content: '';
   position: absolute;
-  bottom: 110px;
+  top: 85px;
   right: 50px;
   width: 40px;
   height: 40px;
@@ -318,7 +318,12 @@ footer .container .company {
 footer .container .company .company__title {
   margin-bottom: 15px;
 }
-footer .container .company a {
+footer .container .company .company__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .container .company .company__links a {
   color: black;
   font-family: "Roboto";
   margin-bottom: 5px;
@@ -333,23 +338,142 @@ footer .container .footer__designed .designed__by {
 footer .container .footer__designed .designed__img {
   margin-top: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .header__logo {
     margin-left: 30px;
   }
   .header__auth {
     margin-right: 25px;
   }
-}
-@media (max-width: 950px) {
   .container {
     max-width: 760px;
   }
   .meet .container .meet__cards {
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
     margin: 0 auto;
   }
   .meet .container .meet__cards .person-meet {
     margin-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .about {
+    margin-top: 30px;
+  }
+  .about .about__cards {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .about__cards .item-about {
+    height: 240px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    max-width: 300px;
+  }
+  header {
+    height: 540px;
+  }
+  header .container .header__nav {
+    padding-top: 30px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  header .container .header__logo {
+    margin-left: 0;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+  header .container .header__auth {
+    margin-right: 0;
+  }
+  header .container .header__auth a {
+    margin-right: 0 !important;
+  }
+  header .container .header__content {
+    margin-top: 10px;
+  }
+  header .container .header__content .header__title {
+    font-size: 30px;
+  }
+  header .container .header__content .header__description {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  header .container .header__content .header__find {
+    padding: 10px 50px;
+  }
+  .meet {
+    margin-top: 24px;
+  }
+  .meet .container .meet__cards .person-meet {
+    margin-top: 25px;
+  }
+  .meet .container .meet__btn {
+    padding: 10px 70px;
+  }
+  .discover {
+    margin-top: 30px;
+  }
+  .discover .container .discover__cards .discover__card_mini,
+  .discover .container .discover__cards .discover__card_max {
+    height: 120px;
+    width: 300px;
+    margin-top: 10px;
+  }
+  .discover .container .discover__cards .discover__top,
+  .discover .container .discover__cards .discover__middle,
+  .discover .container .discover__cards .discover__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .discover .container .discover__footer {
+    margin-top: 45px;
+  }
+  .discover .container .discover__footer h3 {
+    margin-top: 10px;
+  }
+  .discover .container .discover__footer .discover__form {
+    margin-top: 15px;
+  }
+  .discover .container .discover__footer .discover__form .discover__input {
+    min-width: 260px;
+  }
+  .discover .container .discover__footer .discover__form .discover__search {
+    margin-top: 10px;
+    min-width: 260px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  footer .container .footer__company {
+    margin-top: 10px;
+  }
+  footer .container .footer__company .company__title {
+    margin-bottom: 5px;
+  }
+  footer .container .footer__company .company__links {
+    flex-direction: row;
+  }
+  footer .container .footer__company .company__links a {
+    margin: 0 10px;
+  }
+  footer .container .footer__partners .partners__title {
+    margin: 10px 0;
+  }
+  footer .container .footer__designed .designed__by {
+    text-align: center;
   }
 }
