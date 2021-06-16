@@ -155,6 +155,7 @@ header{
             display: flex;
             justify-content: space-between;
             position: relative;
+            flex-wrap: wrap;
             .person-meet {
                 text-align: center;
                 width: 220px;
@@ -179,16 +180,16 @@ header{
                     width: 40px;
                     height: 40px;
                 }
-                .meet__avatar1::before {
+                .meet__avatar_tv::before {
                     background: url(../img/meet/mini_1.svg);
                 }
-                .meet__avatar2::before {
+                .meet__avatar_coffee::before {
                     background: url(../img/meet/mini_2.svg);
                 }
-                .meet__avatar3::before {
+                .meet__avatar_flask::before {
                     background: url(../img/meet/mini_3.svg);
                 }
-                .meet__avatar4::before {
+                .meet__avatar_tg::before {
                     background: url(../img/meet/mini_4.svg);
                 }  
                 .meet__name {
@@ -209,6 +210,134 @@ header{
             padding: 10px 25px;
             margin-top: 35px;
             background: #fff;
+        }
+    }
+}
+
+.discover {
+    margin-top: 100px;
+    .discover__cards {
+        color: #fff;
+        font-size: 22px;
+        .discover__card {
+            margin-top: 25px;
+            border-radius: 5px;
+            height: 310px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .discover__card_mini {
+            width: 300px;
+        }
+        .discover__card_max {
+            width: 620px;
+        }
+        .discover__top {
+            display: flex;
+            justify-content: space-between;
+            .discover__card_mini:nth-child(1) {
+                background: url(../img/discover/1.png);
+            }
+            .discover__card_mini:nth-child(2) {
+                background: url(../img/discover/2.png);
+            }
+            .discover__card_mini:nth-child(3) {
+                background: url(../img/discover/3.png);
+            }
+        }
+        .discover__middle {
+            display: flex;
+            justify-content: space-between;
+            .discover__card_mini {
+                background: url(../img/discover/4.png);
+            }
+            .discover__card_max {
+                background: url(../img/discover/5.png);
+            }
+        }
+        .discover__bottom {
+            display: flex;
+            justify-content: space-between;
+            .discover__card_max {
+                background: url(../img/discover/6.png);
+            }
+            .discover__card_mini {
+                background: url(../img/discover/7.png);
+            }
+        }
+    }
+    .discover__footer {
+        text-align: center;
+        margin-top: 90px;
+        h3 {
+            margin-top: 35px;
+            font-size: 18px;
+            font-family: "Roboto";
+        }
+        .discover__form {
+            margin-top: 40px;
+            .discover__input {
+                width: 240px;
+                height: 40px;
+                border-radius: 5px;
+                border: 1px solid #999999;
+                font-family: "Roboto";
+                padding-left: 5px;
+                margin-right: 5px;
+            }
+            .discover__search {
+                color: #fff;
+                font-size: 14px;
+                outline: none;
+                background: #ff4e50;
+                border-radius: 50px;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 100px;
+    border-top: 4px solid #ff4e50;
+    .container {
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        .footer__logo {
+            font-size: 16px;
+            color: #ff4e50;
+            text-transform: uppercase;
+        }
+        .company {
+            display: flex;
+            flex-direction: column;
+            .company__title {
+                margin-bottom: 15px;
+            }
+            a{
+                color: black;
+                font-family: "Roboto";
+                margin-bottom: 5px;
+            }
+        }
+        .footer__designed {
+            .designed__by{
+                text-transform: uppercase;
+                color: #999999;
+                font-size: 10px;
+                letter-spacing: 2px;
+                text-align: right;
+            }
+            .designed__img{
+                margin-top: 10px;
+            }
         }
     }
 }
